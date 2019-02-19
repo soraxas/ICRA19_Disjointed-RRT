@@ -117,9 +117,8 @@ def main():
             restart_when_merge=not args['--no-restart-when-merge'])
         planner_type = RRdTPlanner
     elif args['informedrrt']:
-        from planners.informedrrtPlanner import InformedRRTPlanner, InformedRRTSampler
+        from planners.informedrrtSampler import InformedRRTSampler
         sampler = InformedRRTSampler()
-        planner_type = InformedRRTPlanner
     elif args['prm']:
         from planners.prmPlanner import PRMSampler, PRMPlanner
         sampler = PRMSampler()
