@@ -1,20 +1,14 @@
 import logging
-import random
 
 from overrides import overrides
+
 from helpers import *
-from planners.rrtPlanner import RRTPlanner
-from planners.rrdtPlanner import RRdTPlanner, RRdTSampler, TreesManager, DisjointTreeParticle, Node
-
 from planners.randomPolicySampler import RandomPolicySampler
+from planners.rrdtPlanner import RRdTPlanner, RRdTSampler, Node
 
-from checkCollision import *
 ############################################################
 ##              Disjointed Particles Sampler              ##
 ############################################################
-from planners.particleFilterSampler import (ENERGY_START,
-                                            RANDOM_RESTART_PARTICLES_ENERGY_UNDER,
-                                            Particle, ParticleFilterSampler)
 
 LOGGER = logging.getLogger(__name__)
 
